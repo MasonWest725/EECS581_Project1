@@ -33,4 +33,13 @@ All the test cases go through smoothly but i want to stress test it with more in
 After further testing and edge case testing, the program seems to do as intended and works great.
 
 I uesd Chat GPT 5.6 -Luna for the generation of the code and i only prompted twice for the full scope. The prompts above is what I sent into Chat
-and the resulting code is what it gave me. 
+and the resulting code is what it gave me. The code was written by the llm however I fully understand what it outputted and how the code works. As far as I am aware there are no limitations in regards to the assignment.
+The sumbitted code works as intended.
+
+Final Thoughts:
+    Although the program in its entirety was written by Chat GPT, it is very interesting how much a good prompt can impact the quality of the code.
+    I have used it in the past for smaller projects of my own and the quality of the output is definetly dependent on the quality of the prompt.
+    I was just unaware of how much it was affected. One thing I did not expect was it to get it correct on the first try. I expected to have to give multiple prompts
+    in order to get the desired program. However I can understand how this can drastically speed up development. I can also understand how it is extremely important
+    to know how the code works. For example if a change needs to be made to add a requirement, if it is small enough I could go in my self and make the change without having to restructure 
+    the entire program from an LLM. This assignment has shown me the importance of a good quality prompt.
