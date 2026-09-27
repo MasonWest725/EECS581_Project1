@@ -30,3 +30,7 @@ Review of second prompt:
 
 After testing the code ChatGPT gave me it all seems to work as intended. The print out is what the assignment desires and the program does exactly what it is supposed to do. 
 All the test cases go through smoothly but i want to stress test it with more input. Mainly lines that have mulitple invalid ips that are close to being valid. I want to see if it can handle that.
+After further testing and edge case testing, the program seems to do as intended and works great.
+
+I uesd Chat GPT 5.6 -Luna for the generation of the code and i only prompted twice for the full scope. The prompts above is what I sent into Chat
+and the resulting code is what it gave me. 
