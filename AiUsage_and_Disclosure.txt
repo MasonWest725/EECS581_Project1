@@ -1,0 +1,32 @@
+Assignment #1
+
+The first prompt I sumbitted was the following, ChatGPT 5.6 -Luna
+
+"I am writing a program in C to extract IPv4 addresses from noisy text, there can also be a port number after the address. It can be embedded anywhere in the text. Only digits, periods, and colons are valid parts of a token. Every other character should be skipped. A candidate token must match the address grammar in full, no partial matches, no truncating to find a valid piece inside a longer run.  An address is four octets separated by periods (octet.octet.octet.octet), each octet 1–3 digits, value 0–255, no leading zero unless the value is exactly 0. An optional :port may follow the fourth octet: 1–5 digits, value 0–65535, same leading-zero rule. If a colon is present, the port must be fully valid or the entire match, address included, is rejected. 
+
+There are restrictions on what i can and cannot use. Built in functions and libraries i cant use are any string to number conversion function. Any address parsing libraries i also cannot use. Any regular expression facility i cannot use. standard character classification functions are okay to use. 
+
+Exactly one valid address may be extracted per input line, everything else in the line is skipped or part of a canadate token that failed. Reject anything that does not exactly match the grammar above, (wrong octet count, out of range octet or port, disallowed leading 0, a second colon, a colon not immediately following the fourth octet, or a stray period/colon directly adjacent to an otherwise valid address. On success print Extracted IPv4 address: A.B.C.D (decimal value: N, port: P) where N is the 32-bit decimal value and P is the port number or the literal text none.
+
+Program requirements
+Input loop: main continuously prompts the user for input until the user enters END (case-sensitive), then prints Program terminated. and exits.
+Extraction function: implement extractIPv4 exactly as prototyped above. All digit accumulation must be done by hand.
+Display: main receives the result from extractIPv4 and formats the output exactly as specified above."
+
+
+Review of generated code:
+
+I checked the code and it seems to be working immediately. The only thing I want to change right now is the print outputs and input prompts.
+Right now it is just "Enter input" and there is also no response if no valid IP address is inputed, it just goes to enter input again. The code also 
+doesn't use any of the restricted functions or calls. The valid calls it makes are "isdigit".
+My next prompt will to have the LLM not make any functionality changes to the code and just add the two changes above.
+
+Second Prompt:
+
+"Everything works great for now, don't change any functionality but I need the input prompt to say "Enter a string (or 'END' to quit):". 
+I also need the program to say "Invalid input: no valid IPv4 address found" after no valid input is submitted, then it can go to the Enter a string again.
+
+Review of second prompt:
+
+After testing the code ChatGPT gave me it all seems to work as intended. The print out is what the assignment desires and the program does exactly what it is supposed to do. 
+All the test cases go through smoothly but i want to stress test it with more input. Mainly lines that have mulitple invalid ips that are close to being valid. I want to see if it can handle that.
